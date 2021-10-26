@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seat availability</title>
+    <style>
+        .seat{
+            display: inline-flex;
+        }
+    
+    .n{
+        margin-Left: 70px;
+    }
+    .n1{
+        padding:5px;
+        border-radius: 6px;
+        color:white;
+        background-color: rgb(9, 73, 212);
+    }
+    .n2{
+        border:2px;
+        width:99%;
+        height:50%;
+        color:aqua;
+        background-color: black;
+    }
+    h1{
+                background-color: DarkSlateGrey;
+                width:96%;
+                margin:0;
+                padding:40px 40px;
+            }
+            nav{
+        background-color: black;
+        width:97%;
+        padding:15px 30px;
+        margin:0;
+    }
+    .a1{
+        text-decoration: none;
+        color:rgba(248, 245, 245, 0.979);
+        margin-right: 10px;
+    }
+    .text{
+        float:right;
+    }
+    button
+    {
+        margin-right: 5px;
+    }
+</style>
+    
+</head>
+<body>
+    <div class="n2" >
+        <h1 Align="center">ROHINI CINEMAS</h1>
+        
+     </div>
+    <nav>
+        <a class="a1" href="#show" class="active">Home</a>
+        <a class="a1" href="About.html" class="active">About</a>
+        <a class="a1" href="contact.html" class="active">Contact</a>
+        <input type="text" class="text" name="search">
+        <button class="text">Search</button>
+    </nav>
+    <h2>Seat availability</h2>
+    <h4>Movie Name: Aranmanai3-Horror</h4>
+    <h4>Date:22-10-2021 </h4>
+    <h4>Time: 12:30 pm</h4>
+    <h4>Ticket Amount: 150.00 Rs</h4>
+    <h2>Select Your Seat</h2>
+    <div class="seat">
+    <div class="seatavailable">
+    <table border="2" cellspacing="17" cellpadding="17">
+        <tr>
+            <th>1</th>
+            <th>2</th>
+            <th>3</th>
+            <th>4</th>
+            <th>5</th>
+        </tr>
+        <tr>
+            <td>10</td>
+            <td>9</td>
+            <td>8</td>
+            <td>7</td>
+            <td>6</td>
+        </tr>
+        <tr>
+            <td>11</td>
+            <td>12</td>
+            <td>13</td>
+            <td>14</td>
+            <td>15</td>
+        </tr>
+        <tr>
+            <td>20</td>
+            <td>19</td>
+            <td>18</td>
+            <td>17</td>
+            <td>16</td>
+        </tr>
+        <tr>
+            <td>21</td>
+            <td>22</td>
+            <td>23</td>
+            <td>24</td>
+            <td>25</td>
+        </tr>
+    </table>
+</div>
+    <div class="seatavailable">
+        <form action="/theater3.html">
+            &nbsp; &nbsp;<lable for="seatNo">Select seat no :</lable>
+            <input list="seatsNo" name="seatNo" id="seatNo">
+            <datalist id="seatsNo">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+                <option>6</option>
+                <option>7</option>
+                <option>8</option>
+                <option>9</option>
+                <option>10</option>
+                <option>11</option>
+                <option>12</option>
+                <option>13</option>
+                <option>14</option>
+                <option>15</option>
+                <option>16</option>
+                <option>17</option>
+                <option>18</option>
+                <option>19</option>
+                <option>20</option>
+                <option>21</option>
+                <option>22</option>
+                <option>23</option>
+                <option>24</option>
+                <option>25</option>
+            </datalist><br><br>&nbsp;
+            Total Amout :<input type="number" name="totalAmount" id="totalAmount"><br><br>
+            &nbsp;<lable for="pay">Make your Pay :</lable>
+           &nbsp; &nbsp;<details>
+            &nbsp; &nbsp; <summary><button class="n1" type="button">Credit Card</button></summary> <br>
+               Card No:<input type="number" placeholder="---- ---- ----"><br><br>
+               CVV :<input type="password" placeholder="000"><br><br>
+               Expiry Daate :<input type="number" placeholder="mm/yyyy"><br><br>
+               Mobile number :<input type="tel" ><br><br>
+               Enter OTP :<input type="number"><br><br>
+               </details>
+               &nbsp; &nbsp;<details>
+                &nbsp; &nbsp; <summary><button class="n1" type="button">Debit Card</button></summary> <br>
+                   Card No:<input type="number" placeholder="---- ---- ----"><br><br>
+                   CVV :<input type="password" placeholder="000"><br><br>
+                   Expiry Daate :<input type="number" placeholder="mm/yyyy"><br><br>
+                   Mobile number :<input type="tel" ><br><br>
+                   Enter OTP :<input type="number"><br><br>
+                   </details>
+                   &nbsp; &nbsp;<details>
+                    &nbsp; &nbsp; <summary><button class="n1" type="button">Gpay</button></summary> <br>
+                    </details>
+                    &nbsp; &nbsp;<details>
+                        &nbsp; &nbsp; <summary><button class="n1" type="button">Phone pay</button></summary> <br>
+                        </details>
+
+            <button><a  href="theater1.html">Back</a></button>
+            <button>Go</button>
+        </form><br>
+    </div>
+</div>
+</body>
+</html>
